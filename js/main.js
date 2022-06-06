@@ -54,9 +54,8 @@ for(let i=0; i<teams.length;i++){
 }
 
 btnSubmit.addEventListener("click", () => {
-  let imgLabel = document.getElementById("image");
-  let nameLabel = document.getElementById("name");
-  let roleLabel = document.getElementById("role");
-
+  let nameLabel = document.getElementById("name").value;
+  let roleLabel = document.getElementById("role").value;
+  let imgLabel = document.getElementById("image").value; 
   addCard(imgLabel, nameLabel, roleLabel);
 })
